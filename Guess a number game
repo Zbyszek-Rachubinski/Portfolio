@@ -1,0 +1,23 @@
+import random
+
+def generate_number(x,y):
+    num = random.randint(x,y)
+    return num
+
+print("Generating a random number from 1 to 100 for you to guess...")
+
+random_number = generate_number(1,100)
+
+given_num = int(input("Give a number"))
+
+while given_num != random_number:
+    
+    if given_num > random_number:
+        print("Your number is too high")
+        given_num = int(input("Give another number"))
+        
+    elif given_num < random_number:
+        print("Your number is too low")
+        given_num = int(input("Give another number"))
+        
+print("Number found! You won! Game ended.")
