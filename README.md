@@ -1,2 +1,1 @@
-# code_training
-# example projects made
+# example projects made during my code training
